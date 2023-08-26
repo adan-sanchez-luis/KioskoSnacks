@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:gravity="right">
+
+            <TextView
+                style="@style/tableStructure"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:gravity="right"
+                android:text="SubTotal:" />
+
+            <TextView
+                android:id="@+id/subTotalPay"
+                style="@style/tableStructure"
+                android:ems="5"
+                android:text="$00.00" />
+        </TableRow>
+
+        <View style="@style/tableBorder" />
+
+        <TableRow android:gravity="right">
+
+            <TextView
+                style="@style/tableStructure"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:gravity="right"
+                android:text="Tax:" />
+
+            <TextView
+                android:id="@+id/taxPay"
+                style="@style/tableStructure"
+                android:ems="5"
+                android:text="$0.00" />
+        </TableRow>
+
+        <View style="@style/tableBorder" />
+
+        <TableRow android:gravity="right">
+
+            <TextView
+                style="@style/tableStructure"
+                android:layout_marginRight="10dp"
+                android:ems="5"
+                android:gravity="right"
+                android:text="Total" />
+
+            <TextView
+                android:id="@+id/totalPay"
+                style="@style/tableStructure"
+                android:ems="5"
+                android:text="$0.00" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="deaultTextSize">30sp</dimen>
+    <dimen name="textFormSize">40sp</dimen>
+    <dimen name="navBarText">50sp</dimen>
+    <dimen name="textButton">30sp</dimen>
+    <dimen name="ProducNameCard">50sp</dimen>
+    <dimen name="buttonAdmin">50sp</dimen>
+    <dimen name="buttonAdminCancel">43sp</dimen>
+    <dimen name="ProducAuxCard">50sp</dimen>
+    <dimen name="textAlert">60sp</dimen>
+    <dimen name="infoPago">60sp</dimen>
+    <dimen name="infoCutorte">40sp</dimen>
+    <dimen name="PagoTextSize">60sp</dimen>
+    <dimen name="cabecera">40sp</dimen>
+    <dimen name="Confirmar">80sp</dimen>
+    <dimen name="recycleLeft">20dp</dimen>
+    <dimen name="recycleRight">20dp</dimen>
+    <dimen name="recycleTop">5dp</dimen>
+    <dimen name="recycleBottom">25dp</dimen>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.PayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundGray"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/subrrallado" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/listProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:gravity="center">
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="2"
+                            android:text="QTY" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:text="Name" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="3"
+                            android:text="Unit\n Price" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="4"
+                            android:text="Amount" />
+                    </TableRow>
+                </TableLayout>
+
+                <View style="@style/tableBorder" />
+
+                <include layout="@layout/total_pay" />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <View style="@style/subrrallado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCardView"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnPayCancel"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_red"
+                android:text="cancel"
+                android:textSize="@dimen/deaultTextSize" />
+
+
+            <Button
+                android:id="@+id/btnPayFull"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/boton_redondo"
+                android:text="pay"
+                android:textSize="@dimen/deaultTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

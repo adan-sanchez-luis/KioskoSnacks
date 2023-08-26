@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Snacks</string>
+    <string name="noConnexion">Check the Internet connection or contact the administrator</string>
+    <string name="error">Unexpected error, please try again</string>
+    <string name="unknown">Sorry, something went wrong in the process. Please try again later or contact the administrator.</string>
+
+    <string-array name="groupConcept">
+        <item>Select Group</item>
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Snacks</item>
+        <item>Dairy</item>
+    </string-array>
+
+    <string-array name="tagConcept">
+        <item>Wallet</item>
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+
+    <string-array name="acountTypeConcept">
+        <item>Cargo</item>
+        <item>Abono</item>
+        <item>Eventual</item>
+    </string-array>
+
+    <string-array name="unitsConcept">
+        <item>Select Units</item>
+        <item>Piece</item>
+        <item>Liter</item>
+        <item>Package</item>
+    </string-array>
+</resources>

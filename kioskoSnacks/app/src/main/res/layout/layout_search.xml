@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="1000dp"
+    android:layout_height="400dp"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="100dp"
+    app:cardBackgroundColor="@color/backgroundGray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/productSearch"
+            android:layout_width="800dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Product name"
+            android:textSize="@dimen/deaultTextSize"
+            android:background="@drawable/border_edittext" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/button_red"
+                android:text="Cancel"
+                android:textSize="@dimen/deaultTextSize" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:background="@drawable/boton_redondo"
+                android:text="Search"
+                android:textSize="@dimen/deaultTextSize" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

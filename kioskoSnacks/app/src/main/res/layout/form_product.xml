@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGray"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/productCode"
+            style="@style/modifiedEditText"
+            android:hint="Code:"
+            android:inputType="number"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/productName"
+            style="@style/modifiedEditText"
+            android:hint="Product name:"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/description"
+            style="@style/modifiedEditText"
+            android:gravity="top"
+            android:hint="Description:"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:scrollbars="vertical" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/quantity"
+            style="@style/modifiedEditText"
+            android:gravity="top"
+            android:hint="Stock:"
+            android:inputType="number"
+            android:scrollbars="vertical" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        style="@style/modifiedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units:"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_black">
+
+            <Spinner
+                android:id="@+id/units"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/price"
+            style="@style/modifiedEditText"
+            android:hint="Price"
+            android:inputType="numberDecimal"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/modifiedEditText"
+        android:textColor="@color/white"
+        android:text="Group:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border_black">
+
+            <Spinner
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout style="@style/editTextParent">
+
+        <EditText
+            android:id="@+id/notes"
+            style="@style/modifiedEditText"
+            android:hint="Notes"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgForm"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginRight="150dp"
+            android:src="@color/white" />
+
+        <Button
+            android:id="@+id/btnImage"
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:background="@drawable/boton_redondo"
+            android:text="Select Image"
+            android:textSize="@dimen/textButton" />
+    </LinearLayout>
+
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+        android:id="@+id/sendDataProduc"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Save"
+        android:textSize="@dimen/textButton" />
+</LinearLayout>

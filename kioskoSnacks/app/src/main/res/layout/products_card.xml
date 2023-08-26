@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    app:cardCornerRadius="70dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCardView"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/nameProductCardShop"
+                style="@style/producNameRecycle"/>
+
+            <TextView
+                android:id="@+id/priceProductCardShop"
+                style="@style/producAuxRecycle"
+                android:gravity="right"
+                android:text="$00.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp">
+
+            <ImageView
+                android:id="@+id/imageProductCardShop"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@color/black" />
+
+            <TextView
+                android:id="@+id/descriptionProductCardShop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:text="Description"
+                android:textSize="@dimen/deaultTextSize" />
+
+            <LinearLayout
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/minus"
+                    android:tint="@color/colorAccent"
+                    tools:ignore="UseAppTint" />
+
+                <TextView
+                    android:id="@+id/amountProductCardShop"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/text_border"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/deaultTextSize" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="40dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/add"
+                    android:tint="@color/red"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/qtyRow"
+        style="@style/tableStructure"
+        android:ems="2"
+        android:text="QTY" />
+
+    <TextView
+        android:id="@+id/nameRow"
+        style="@style/tableStructure"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/priceRow"
+        style="@style/tableStructure"
+        android:ems="3"
+        android:text="Unit\n Price" />
+
+    <TextView
+        android:id="@+id/amountRow"
+        style="@style/tableStructure"
+        android:ems="4"
+        android:text="Amount" />
+</TableRow>

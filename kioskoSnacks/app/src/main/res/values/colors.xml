@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#CF1E1E</color>
+
+
+    <color name="green">#21E43C</color>
+    <!-- colores de la alerta-->
+    <color name="colorPrimary">@color/backgroundBlack</color>
+    <color name="backgroundBlack">#A6A5A5</color>
+    <color name="backgroundGray">#999</color>
+    <color name="colorPrimaryDark">#353535</color>
+    <color name="colorAccent">#00A5FF</color>
+    <color name="colorButtonLogin">#007AFF</color>
+
+    <!-- Colores para el tipo de Log -->
+    <color name="SUCCESS_COLOR">#4BB543</color>
+    <color name="BUTTON_COLOR">#008CBA</color>
+    <color name="ERROR_COLOR">#ff3333</color>
+    <color name="WARNING_COLOR">#ffcc00</color>
+    <color name="UNKNOWN_COLOR">#FFA200</color>
+    <color name="SCANCODE_COLOR">#4cff33</color>
+    <color name="SCAN_TARJETA_COLOR">#4cff33</color>
+    <color name="SEND_DATA_COLOR">#3355FF</color>
+    <color name="SIN_CONEXCION_COLOR">#FFBF00</color>
+
+    <!-- Colores del cardview -->
+    <color name="colorCardView">#DFE3E9</color>
+    <color name="colorGray">#999</color>
+    <color name="primaryTextColor">@color/black</color>
+    <color name="aletColor">#26313C</color>
+
+</resources>

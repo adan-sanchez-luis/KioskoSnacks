@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.kioskosnacks'
+    compileSdk 33
+
+    buildFeatures { viewBinding true }
+
+    defaultConfig {
+        applicationId "com.example.kioskosnacks"
+        minSdk 27
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            //buildConfigField "String", "API_URL", "\"https://boton.app:8447\""
+            buildConfigField "String", "API_URL", "\"https://pepinosbox.club:8082/\""
+            //buildConfigField "String", "API_URL", "\"https://localhost:44373/\""
+        }
+        debug {
+            //buildConfigField "String", "API_URL", "\"https://boton.app:8447\""
+            //buildConfigField "String", "API_URL", "\"https://pepinosbox.club:8082/\""
+            buildConfigField "String", "API_URL", "\"http://10.0.2.2:48659/\""
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.activity:activity:1.6.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //propocito general
+
+    //log
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //servicios
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    //animaciones
+    implementation "com.airbnb.android:lottie:6.0.0"
+    implementation 'br.com.simplepass:loading-button-android:2.2.0'
+    implementation files('libs\\marshall-java-sdk.main.jar')
+    implementation files('libs\\usbserial.jar')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

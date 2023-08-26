@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="parentFull">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="parentMin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="editTextParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="hintTextAppearance">@style/MyHintTextAppearance</item>
+    </style>
+
+    <style name="colorBarraEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="android:textColorHighlight">@color/colorGray</item>
+    </style>
+
+    <style name="modifiedEditText" parent="colorEditeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/textFormSize</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_blanco</item>
+        <item name="android:theme">@style/colorBarraEditText</item>
+        <item name="android:imeOptions">actionDone</item>
+    </style>
+
+    <style name="MyHintTextAppearance" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/textFormSize</item> <!-- Tamaño de texto personalizado -->
+    </style>
+
+    <style name="subrrallado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">6dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="tableBorder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="tableStructure">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/cabecera</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ems">13</item>
+        <item name="android:maxLines">3</item>
+    </style>
+
+    <style name="tableName" parent="tableStructure">
+        <item name="android:layout_weight">0.7</item>
+    </style>
+
+    <style name="tableGeneric" parent="tableStructure">
+        <item name="android:layout_weight">0.1</item>
+    </style>
+
+    <style name="TableTotal" parent="tableGeneric">
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="producNameRecycle" parent="parent">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:ems">15</item>
+        <item name="android:textSize">@dimen/ProducNameCard</item>
+        <item name="android:text">Product name</item>
+    </style>
+
+    <style name="producAuxRecycle" parent="parentMin">
+        <item name="android:textSize">@dimen/ProducAuxCard</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.ReportActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundGray"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View style="@style/subrrallado" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/startDate"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/boton_redondo"
+                android:text="date1"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="-"
+                android:textSize="80sp" />
+
+            <Button
+                android:id="@+id/endDate"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/boton_redondo"
+                android:text="date2"
+                android:textSize="40sp" />
+
+            <Spinner
+                android:id="@+id/order"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:gravity="center">
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="10"
+                            android:text="Name" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="4"
+                            android:text="Unit\n Price" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="3"
+                            android:text="Unit\n sales" />
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:ems="5"
+                            android:text="Total" />
+
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/listProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View style="@style/tableBorder" />
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow android:gravity="right">
+
+                        <TextView
+                            style="@style/tableStructure"
+                            android:layout_marginRight="10dp"
+                            android:ems="5"
+                            android:gravity="right"
+                            android:text="Total" />
+
+                        <TextView
+                            android:id="@+id/totalSales"
+                            style="@style/tableStructure"
+                            android:ems="5"
+                            android:text="$0.00" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorCardView"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View style="@style/subrrallado" />
+
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/boton_redondo"
+                android:text="Search report"
+                android:textSize="@dimen/deaultTextSize" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/layout_loading"
+        layout="@layout/layout_loading"
+        android:visibility="gone" />
+</androidx.constraintlayout.widget.ConstraintLayout>
